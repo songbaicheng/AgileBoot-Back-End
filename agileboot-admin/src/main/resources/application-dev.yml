@@ -12,7 +12,7 @@ spring:
                 allow:
                 url-pattern: /druid/*
                 # 控制台管理用户名和密码
-                login-username: agileboot
+                login-username: druid
                 login-password: 123456
             filter:
                 stat:
@@ -50,9 +50,9 @@ spring:
             datasource:
                 # 主库数据源
                 master:
-                    url: jdbc:mysql://localhost:33067/agileboot-pure?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+                    url: jdbc:mysql://121.37.6.69:3306/agileboot-pure?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
                     username: root
-                    password: 12345
+                    password: Xuhaifeng!
                 # 从库数据源
 #                slave:
 #                    url: jdbc:mysql://localhost:33067/agileboot2?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
@@ -62,13 +62,13 @@ spring:
     # redis 配置
     redis:
         # 地址
-        host: localhost
+        host: 121.37.6.69
         # 端口，默认为6379
-        port: 36379
+        port: 6379
         # 数据库索引
         database: 0
         # 密码
-        password: 12345
+        password: Xuhaifeng
         # 连接超时时间
         timeout: 10s
         lettuce:
@@ -84,7 +84,7 @@ spring:
 
 logging:
     file:
-        path: D:/logs/agileboot-dev
+        path: /Users/songbaicheng/logs/agileboot-dev
 
 
 springdoc:
